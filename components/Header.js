@@ -28,7 +28,7 @@ function Header() {
 	}, []);
 
 	const handleRegister = () => {
-		fetch('morningnews-backend-two.vercel.app/users/signup', {
+		fetch('https://morningnews-backend-kr86.vercel.app/users/signup', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ username: signUpUsername, password: signUpPassword }),
@@ -45,7 +45,7 @@ function Header() {
 
 	const handleConnection = () => {
 
-		fetch('morningnews-backend-two.vercel.app/users/signin', {
+		fetch('https://morningnews-backend-kr86.vercel.app/users/signin', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ username: signInUsername, password: signInPassword }),
@@ -142,3 +142,5 @@ function Header() {
 }
 
 export default Header;
+
+

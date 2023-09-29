@@ -16,7 +16,7 @@ function Article(props) {
 			return;
 		}
 
-		fetch(`morningnews-backend-two.vercel.app/users/canBookmark/${user.token}`)
+		fetch(`https://morningnews-backend-kr86.vercel.app/users/canBookmark/${user.token}`)
 			.then(response => response.json())
 			.then(data => {
 				if (data.result && data.canBookmark) {
