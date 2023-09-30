@@ -44,7 +44,7 @@ function Header() {
 	};
 
 	const handleConnection = () => {
-
+		console.log('click')
 		fetch('https://morningnews-backend-kr86.vercel.app/users/signin', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
